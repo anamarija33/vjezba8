@@ -1,6 +1,4 @@
 import math
-import sys
-
 
 def zbroj(broj1, broj2):
     zbr = broj1 + broj2
@@ -94,5 +92,3 @@ def max_element(l):
     else:
         return
 
-
-sys.path.append('Vjezba_8')
