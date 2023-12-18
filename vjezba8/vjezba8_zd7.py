@@ -5,6 +5,9 @@ u okviru ove vježbe. Potom lokaciju mape 'Vjezba_8' dodajte (append) u varijabl
 kojem ćete importirati moj_modul.py i testirati neke od funkcija koje se nalaze unutar
 modula moj_modul.py (testove smislite sami).
 '''
+#path do direktorija..nije isti ka i na gh
+sys.path.append(r'C:\Users\Student\Documents\Programiranje\vjezba8\zd8')
+
 import moj_modul
 
 t = moj_modul.unos_int()
