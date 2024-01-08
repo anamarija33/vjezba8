@@ -24,3 +24,22 @@ def funct(e):
 izlaz_osobe.sort(reverse = True,key = funct)
 for i in izlaz_osobe:
     izlazna.write(i+'\n')
+'''
+profesorovo rjšenje
+niz = []
+niz2=[]
+file = open("ulaz6.txt","r")
+for line in file:
+    niz.append(line.split())
+file.close()
+for i in range(len(niz)):
+    x =float(niz[i][1])/(float(niz[i][2])**2)
+    niz2.append((niz[i][0],str(x)))
+
+niz2.sort(key=lambda niz2:niz2[1],reverse = True)
+file = open("izlaz6.txt",'w')
+for i in range(len(niz2)):
+    file.write(niz2[i][0]+' '+niz2[i][1]+"\n")
+file.close()
+print(niz2)
+'''
