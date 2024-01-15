@@ -13,3 +13,31 @@ nasumično generiranih brojeva lista2 (kao kod izvlačenja lota 7/39). Ako koris
 pogođeno.
 Npr. za unesenu listu [2, 13, 21, 23, 32, 33, 39] program generira nasumičnu listu
 [31, 2, 27, 33, 4, 9, 13] i ispisuje poruku da je pogođeno 3 broja'''
+import random
+lista = []
+brojcanik = 0
+while(brojcanik!= 7):
+    broj = int(input("Upiši broj između 1 i 39: "))
+    if broj >= 1 and broj <=39 and broj not in lista:
+        lista.append(broj)
+        brojcanik+=1
+def izvlacenje_brojeva():
+    nasumicni = []
+    for i in range(7):
+        nasumicni.append(random.randint(1,40))
+    return nasumicni
+lista2= izvlacenje_brojeva()
+print(lista,lista2)
+def usporedi(lista,lista2):
+    br = 0
+    for i in lista:
+        if i in lista2:
+            br+=1
+    if br == 7:
+        print("JACKPOT")
+
+    else:
+        print(br,'pogođeno.')
+usporedi(lista,lista2)
+        
+        
